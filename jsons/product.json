@@ -1,0 +1,13 @@
+{
+    "product":[
+        {
+            "name":"A Product",
+            "subtitle":"this is a product.",
+            "imgPath":"",
+            "link":"",
+            "onSale":true,
+            "price":1000,
+            "OnSalePrice":9487
+        }
+    ]
+}

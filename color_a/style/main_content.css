@@ -1,0 +1,57 @@
+/* modal */
+.modal_bg {background-color: rgba(0, 0, 0, .5);background:hsla(0, 0%, 0%, 0.5);}
+/* function area */
+.function_area {background-color: white;}
+.func_btn {background-color: rgba(0, 0, 0, .8);color: white;}
+.func_btn:hover {background-color: rgba(65, 65, 65, 0.8);}
+
+
+.lang_modal {background-color: white;}
+.lang_btn {background-color: rgba(230, 230, 230, 0.8);color: black;}
+.lang_selecting {background-color: rgba(0, 0, 0, .8);color: white;}
+
+/* menu */
+
+.mobile_menu {background-color: white;}
+.mobile_menu_group {background-color: white;}
+.mobile_header {background-color: white;}
+.mobile_menu_bg {background-color: rgba(0, 0, 0, .5);}
+.mobile_menu_item:hover {background: rgba(145, 145, 145, 0.3);}
+
+/* main page */
+.main_page {background-image: url('../../test3.jpg');background-repeat: no-repeat;background-position: center; background-size: auto;}
+.main_title {filter: drop-shadow(4px 2px 0 rgba(108, 108, 108, 0.5));}
+.main_subtitle {filter: drop-shadow(2px 2px 0 rgba(108, 108, 108, 0.5));}
+.main_page::after {z-index: 150;background-image: url('./Images/border2.png');background-repeat: no-repeat;background-size: 100% 100%;}
+.main_wrap_btn {background-color: rgba(180, 180, 180, 0.2);border-color: black;color: white;filter: drop-shadow(2px 2px 0 rgba(108, 108, 108, 0.5));}
+.main_wrap_btn:hover {background-color:#323638;}
+
+.wrap_dropdown {background-color:#323638f2;color: white;}
+.wrap_dropdown a {color: white;}
+
+
+.keep_read_btn a {color: #CDCDCD;border-color: #cdcdcd;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);}
+.keep_read_btn a:hover {background-color: #cdcdcd;color: #3C4144;}
+
+/* body */
+.body {background-color: white;z-index: 100;}
+.body::after {background-color: white;}
+
+
+.class_btn {background-color: #3C4144;color: white;}
+.class_btn:hover {background-color:#677075;}
+.class_selecting {background-color:#292c2e;}
+
+.product_item:hover {background-color:#cdcdcd;}
+
+.page_ctrl div {background-color:#3C4144;color: white;}
+
+.productSelect{background-color:rgba(255, 255, 255, .8) !important ;color: black !important ;}
+
+/* footer */
+.footer {background-color: #3C4144;color: white;}
+.footer_lang_btn {background-color: rgba(0, 0, 0, .8);color: white;}
+.footer_lang_btn:hover{background-color: rgba(65, 65, 65, 0.8);}
+.footer_inf div :hover {border-color: white;}
+
+.copyright {background-color: #323638;}

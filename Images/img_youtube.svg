@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-img_youtube">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="img_youtube" clip-path="url(#clip-img_youtube)">
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="50" cy="50" r="50" fill="red"/>
+    <g id="Group_16" data-name="Group 16" transform="translate(-131 -123)">
+      <path id="Path_18" data-name="Path 18" d="M66.746,40.6a7.539,7.539,0,0,0-5.3-5.339C56.763,34,38,34,38,34s-18.763,0-23.442,1.262a7.539,7.539,0,0,0-5.3,5.339C8,45.31,8,55.136,8,55.136s0,9.826,1.254,14.535a7.539,7.539,0,0,0,5.3,5.339C19.237,76.273,38,76.273,38,76.273s18.763,0,23.442-1.262a7.539,7.539,0,0,0,5.3-5.339C68,64.962,68,55.136,68,55.136S68,45.31,66.746,40.6Z" transform="translate(143 118)" fill="#fff"/>
+      <path id="Path_19" data-name="Path 19" d="M78,87.674l15.682-8.921L78,69.831Z" transform="translate(96.864 94.384)" fill="red"/>
+    </g>
+  </g>
+</svg>
