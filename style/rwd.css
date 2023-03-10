@@ -6,6 +6,12 @@
     }
 }
 
+@media (max-width:430px) {
+    .main_footer {
+        display: none;
+    }
+}
+
 @media (max-width:460px) {
     .classes {
         font-size: 13px;
@@ -107,6 +113,10 @@
 
     .main_wrap {
         display: none;
+    }
+
+    .main_title img {
+        transform: scale(120%);
     }
 }
 

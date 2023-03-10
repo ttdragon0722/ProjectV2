@@ -3,14 +3,14 @@
   - [ ] 公告動畫特效 滑入
 
 - **首頁**
-  - [ ] dropdown 背景黑底白字
-  - [ ] dropdown padding 調高
+  - [x] dropdown 背景黑底白字
+  - [x] dropdown padding 調高
 
 - **Header Bar**
-  - [ ] Function bar information 改成圖示
+  - [x] Function bar information 改成圖示
     - 回首頁  聯絡我們 購物清單  結帳  語系
-  - [ ] 語系選擇 簡繁轉換
-  - [ ] 選擇語言的介面圖示砍掉
+  - [x] 語系選擇 簡繁轉換
+  - [x] 選擇語言的介面圖示砍掉
 
 - **Footer**
   - [ ] Link icon 增可以塞到13個    
@@ -19,7 +19,7 @@
   - [ ] Footer往上的箭頭
   
 - **Body**
-  - [ ] body的元件 邊界修齊
+  - [x] body的元件 邊界修齊
 
 - **Product**
   - [ ] Product 篩選介面往左移 當成標題 +一個地方可以加英文
@@ -27,7 +27,7 @@
   - [ ] Product 的換頁按鈕的 距離加大 字變小
 
 - **Map**
-  - [ ] map 邊界修飾
+  - [x] map 邊界修飾
 
 - **Fixed icon**
   - [ ] 購物車icon 外面加一個數量的圖示
@@ -48,8 +48,30 @@
   - [ ] 手機板圓弧刪除
 
 
+##**PC Menu Sample**
+###### no dropdown
+``` html
+<div class="main_wrap">
+    <a href=""><div class="main_wrap_btn">首頁</div></a>
+</div>
+```
+
+###### with dropdown
+``` html
+<div class="main_wrap">
+    <div class="main_wrap_btn">居家/生活<i class="fa-solid fa-caret-down"></i></div>
+    <div class="wrap_dropdown">
+        <a href="#"><div>Link 1</div></a>
+        <a href="#"><div>Link 2</div></a>
+        <a href="#"><div>Link 3</div></a>
+    </div>
+</div>
+```
+
+
+
 ##**Mobile Menu Sample**
-###### sample
+###### no dropdown
 ``` html
 <div class="mobile_menu_item">
     <a class="mobile_menu_link" href="">
@@ -78,7 +100,7 @@
 </div>
 ```
 
-##**Link sample**
+##**Link Json Sample**
 ##### json
 ``` json
 {
