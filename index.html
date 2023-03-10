@@ -37,27 +37,82 @@
     <script src="js/anim.js"></script>
 </head>
 
-<body>
+<body style="background-color: black;">
 
+    <!-- mobile menu -->
     <section class="mobile_menu">
+        <!-- main header -->
         <div class="mobile_header header">
             <div class="container flex mobile_action">
+                <!-- menu -->
                 <button class="menu_btn"><i class="fa-solid fa-bars"></i></button>
-
+                <!-- logo -->
                 <img src="Images/logo_black2.png" style="height: 65%;">
-
+                <!-- search -->
                 <button class="search_btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
+        <!-- menu display -->
         <div class="mobile_menu_bg" style="display: none;">
+            <!-- menu link -->
             <div class="mobile_menu_group" style="overflow-y: scroll;"></div>
     </section>
 
-    <script>
-        
-    </script>
+
+    <!-- function area -->
+    <section class="function_area header">
+        <div class="container flex">
+            <div class="navbar function_bar">
+                <a href="">
+                    <div class="navbar_icon">回首頁</div>
+                </a>
+                <a href="">
+                    <div class="navbar_icon">聯絡我們</div>
+                </a>
+                <a href="">
+                    <div class="navbar_icon">購物清單</div>
+                </a>
+                <a href="">
+                    <div class="navbar_icon">結帳</div>
+                </a>
+                <div class="navbar_icon">語系<i class="fa-solid fa-caret-down"></i>
+                    <div class="navbar_dropdown">
+                        <a href="" class="navbar_dropdown_item">
+                            <div>中文</div>
+                        </a>
+                        <a href="" class="navbar_dropdown_item">
+                            <div>English</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar_icon">簡繁轉換<i class="fa-solid fa-caret-down"></i>
+                    <div class="navbar_dropdown">
+                        <a href="" class="navbar_dropdown_item">
+                            <div>簡體中文</div>
+                        </a>
+                        <a href="" class="navbar_dropdown_item">
+                            <div>繁體中文</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%;text-align: right;">
+                
+                <input type="text" class="input_search" placeholder="Type to Search...">
+                <button class="btn_search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- body -->
+    <section class="body">
+        <div class="container">
+
+        </div>
+    </section>
+
 </body>
 
 </html>

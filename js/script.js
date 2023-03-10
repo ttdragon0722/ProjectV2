@@ -1,11 +1,10 @@
 $(document).ready(function () {
-    
+    // mobile menu animation gsap scrollTrigger
     const showAnim = gsap.from('.mobile_menu', {
         yPercent: -100,
         paused: true,
         duration: 0.2
     }).progress(1);
-
     ScrollTrigger.create({
         start: "top top",
         end: 99999,
@@ -15,39 +14,41 @@ $(document).ready(function () {
     })
 
     // modal open & close 
-    $('#lang_btn').click(function (e) {
-        e.preventDefault();
-        if ($('#lang_modal').css('display') === 'none') {
-            fadeIn('#lang_modal');
-            $('#lang_modal').css('display', "block");
-            $('body').css('overflow-y', 'hidden');
+    // $('#lang_btn').click(function (e) {
+    //     e.preventDefault();
+    //     if ($('#lang_modal').css('display') === 'none') {
+    //         fadeIn('#lang_modal');
+    //         $('#lang_modal').css('display', "block");
+    //         $('body').css('overflow-y', 'hidden');
 
-        } else {
-            fadeOut('#lang_modal');
-            $('body').css('overflow-y', 'scroll');
-        }
-    });
+    //     } else {
+    //         fadeOut('#lang_modal');
+    //         $('body').css('overflow-y', 'scroll');
+    //     }
+    // });
 
-    $('#footer_lang_btn').click(function (e) {
-        e.preventDefault();
-        if ($('#lang_modal').css('display') === 'none') {
-            fadeIn('#lang_modal');
-            $('#lang_modal').css('display', "block");
-            $('body').css('overflow-y', 'hidden');
+    // $('#footer_lang_btn').click(function (e) {
+    //     e.preventDefault();
+    //     if ($('#lang_modal').css('display') === 'none') {
+    //         fadeIn('#lang_modal');
+    //         $('#lang_modal').css('display', "block");
+    //         $('body').css('overflow-y', 'hidden');
 
-        } else {
-            fadeOut('#lang_modal');
-            $('body').css('overflow-y', 'scroll');
-        }
-    });
+    //     } else {
+    //         fadeOut('#lang_modal');
+    //         $('body').css('overflow-y', 'scroll');
+    //     }
+    // });
 
-    $('#lang_modal').click(function (event) {
-        if (event.target === this) {
-            fadeOut('#lang_modal');
-            $('body').css('overflow-y', 'scroll');
-        }
-    })
+    // $('#lang_modal').click(function (event) {
+    //     if (event.target === this) {
+    //         fadeOut('#lang_modal');
+    //         $('body').css('overflow-y', 'scroll');
+    //     }
+    // })
 
+
+    //  ========== mobile menu ================
     // mobile menu open & close
     $('.menu_btn').click(function (e) {
         e.preventDefault();
@@ -60,19 +61,16 @@ $(document).ready(function () {
         } else {
             fadeOut('.mobile_menu_bg');
             $('body').css('overflow-y', 'scroll');
-        }
+        };
     });
-
-
     $('.mobile_menu_bg').click(function (event) {
         if (event.target === this) {
             slideOut('.mobile_menu_group');
             fadeOut('.mobile_menu_bg');
             $('body').css('overflow-y', 'scroll');
-        }
+        };
     })
-
-    // menu dropdown
+    // mobile menu dropdown setup + button
     $.ajax({
         type: "GET",
         url: "/jsons/link.json",
@@ -97,7 +95,7 @@ $(document).ready(function () {
                     $(".mobile_menu_group").append(
                         `<div class="mobile_menu_item"><a class="mobile_menu_link" href="${response["links"][i]["link"]}"><div>${response["links"][i]["title"]}</div></a></div>`);
                 }
-            }
+            };
             $('.mobile_dropdown').click(function (e) {
                 e.preventDefault();
                 console.log("click");
@@ -105,13 +103,26 @@ $(document).ready(function () {
                     $(this).siblings('.mobile_dropdown_items').show();
                 } else {
                     $(this).siblings('.mobile_dropdown_items').hide();
-                }
-            })
+                };
+            });
+        }
+    });
+    
+    // ========== pc navbar ===============
+    $(".navbar_icon").click(function (e) { 
+        // e.preventDefault();
+        let dropdown_menu = $(this).children(".navbar_dropdown");
+        if (dropdown_menu.css("display") === "none") {
+            fadeIn($(this).children(".navbar_dropdown"));
+            dropdown_menu.css("display","block");
+        } else {
+            fadeOut($(this).children(".navbar_dropdown"));
         }
     });
 
 });
 
+// animation function 
 function slideIn(ele) {
     gsap.fromTo(ele,
         {
@@ -122,18 +133,16 @@ function slideIn(ele) {
             duration: 0.5
         }
 
-    )
-}
-
+    );
+};
 function slideOut(ele) {
     gsap.to(ele,
         {
             x: '-100%',
         }
 
-    )
-}
-
+    );
+};
 function fadeIn(ele) {
     gsap.fromTo(ele,
         {
@@ -144,8 +153,7 @@ function fadeIn(ele) {
             duration: 0.2
         }
     );
-}
-
+};
 function fadeOut(ele) {
     gsap.to(ele,
         {
@@ -156,4 +164,4 @@ function fadeOut(ele) {
             }
         }
     );
-}
+};
