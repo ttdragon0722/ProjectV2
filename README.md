@@ -1,6 +1,6 @@
 ### TODO
 - **公告**
-  - [ ] 公告動畫特效 滑入
+  - [x] 公告動畫特效 滑入
 
 - **首頁**
   - [x] dropdown 背景黑底白字
@@ -11,23 +11,16 @@
     - 回首頁  聯絡我們 購物清單  結帳  語系
   - [x] 語系選擇 簡繁轉換
   - [x] 選擇語言的介面圖示砍掉
-
-- **Footer**
-  - [ ] Link icon 增可以塞到13個    
-  - [ ] Footer改成三排    
-  - [ ] Footer 改1比3 ( 1: logo + fb  3:fast link)    
-  - [ ] Footer往上的箭頭
-  
 - **Body**
   - [x] body的元件 邊界修齊
+- **Map**
+  - [x] map 邊界修飾
 
 - **Product**
   - [ ] Product 篩選介面往左移 當成標題 +一個地方可以加英文
   - [ ] Product 篩選內距加大  延伸成一大條 顏色很淺的灰
   - [ ] Product 的換頁按鈕的 距離加大 字變小
 
-- **Map**
-  - [x] map 邊界修飾
 
 - **Fixed icon**
   - [ ] 購物車icon 外面加一個數量的圖示
@@ -40,12 +33,19 @@
   - [ ] 間距調小
   - [ ] 圖片改成圓形
 
+- **Footer**
+  - [ ] Link icon 增可以塞到13個    
+  - [ ] Footer改成三排    
+  - [ ] Footer 改1比3 ( 1: logo + fb  3:fast link)    
+  - [ ] Footer往上的箭頭
+  
+
 - **Mobile**
   - [x] Mobile menu link padding 加大
   - [x] Function bar+搜尋  logo移中間
   - [ ] search model
-  - [ ] 間距貼齊
-  - [ ] 手機板圓弧刪除
+  - [x] 間距貼齊
+  - [x] 手機板圓弧刪除
 
 
 ##**PC Menu Sample**

@@ -18,7 +18,7 @@
 
 
 /* main page */
-.main_page {background-image: url('../../test3.jpg');background-repeat: no-repeat;background-position: center; background-size: auto;}
+.main_page {background-image: url('../../Images/homepage_background.jpg');background-repeat: no-repeat;background-position: center; background-size: auto;}
 .main_title {filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, .8));}
 .main_subtitle {filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .8));}
 .main_wrap_btn {background-color: rgba(0, 0, 0, 0.4);border-color: black;color: white;filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));}
@@ -29,6 +29,11 @@
 
 .keep_read_btn a {background-color: rgba(0, 0, 0, rgba(0, 0, 0, .5)); color: #CDCDCD;border-color: #cdcdcd;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8);}
 .keep_read_btn a:hover {background-color: #cdcdcd;color: #3C4144;}
+
+
+/* carousel */
+.carousel-btn {color: rgba(255, 255, 255, .5);background-color: rgba(0, 0, 0, .1);}
+.carousel-btn:hover,.carousel-btn:focus {color: white;background-color: rgba(0, 0, 0, .2);}
 
 
 

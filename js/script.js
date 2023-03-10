@@ -1,4 +1,31 @@
 $(document).ready(function () {
+
+    // carousel
+    const buttons = document.querySelectorAll("[data-carousel-btn]");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+            const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+
+            let activeSlide = slides.querySelector("[data-active]");
+            if (!activeSlide) {
+                activeSlide = slides.firstElementChild;
+                activeSlide.dataset.active = true;
+            }
+
+            let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+            if (newIndex < 0) newIndex = slides.children.length - 1;
+            if (newIndex >= slides.children.length) newIndex = 0;
+
+            slides.children[newIndex].dataset.active = true;
+            delete activeSlide.dataset.active;
+        })
+    });
+
+
+
+
     // mobile menu animation gsap scrollTrigger
     const showAnim = gsap.from('.mobile_menu', {
         yPercent: -100,
@@ -65,7 +92,8 @@ $(document).ready(function () {
     });
     $('.mobile_menu_bg').click(function (event) {
         if (event.target === this) {
-            slideOut('.mobile_menu_group');
+            ~
+                slideOut('.mobile_menu_group');
             fadeOut('.mobile_menu_bg');
             $('body').css('overflow-y', 'scroll');
         };
@@ -87,7 +115,7 @@ $(document).ready(function () {
                         <div class="wrap_dropdown"></div></div>`
                     );
 
-                    for (let dropI = 0;dropI < response["links"][i]["dropdown"].length;dropI++) {
+                    for (let dropI = 0; dropI < response["links"][i]["dropdown"].length; dropI++) {
                         $(".wrap_dropdown").last().append(
                             `<a href="${response["links"][i]["dropdown"][dropI]["link"]}"><div>${response["links"][i]["dropdown"][dropI]["title"]}</div></a>`
                         );
@@ -108,7 +136,7 @@ $(document).ready(function () {
                         `<div class="mobile_menu_item"><div class="mobile_dropdown">${response["links"][i]["title"]}<i class="fa-solid fa-chevron-down"></i></div><div class="mobile_dropdown_items"></div></div>`
                     );
 
-                    for (let dropI = 0;dropI < response["links"][i]["dropdown"].length;dropI++) {
+                    for (let dropI = 0; dropI < response["links"][i]["dropdown"].length; dropI++) {
                         $(".mobile_dropdown_items").last().append(
                             `<a href="${response["links"][i]["dropdown"][dropI]["link"]}"><div class="mobile_menu_item">${response["links"][i]["dropdown"][dropI]["title"]}</div></a>`
                         );
@@ -131,14 +159,14 @@ $(document).ready(function () {
             });
         }
     });
-    
+
     // ========== pc navbar ===============
-    $(".navbar_icon").click(function (e) { 
+    $(".navbar_icon").click(function (e) {
         // e.preventDefault();
         let dropdown_menu = $(this).children(".navbar_dropdown");
         if (dropdown_menu.css("display") === "none") {
             fadeIn($(this).children(".navbar_dropdown"));
-            dropdown_menu.css("display","block");
+            dropdown_menu.css("display", "block");
         } else {
             fadeOut($(this).children(".navbar_dropdown"));
         }

@@ -24,7 +24,9 @@ $(window).on('load', function () {
         {
             y:'-30%'
         }
-    )
+    ).set(
+        '#carousel',{y:"-10%"}
+    );
 
     TL.to(
         '.main_title',
@@ -61,14 +63,14 @@ $(window).on('load', function () {
 
 
     gsap.to(
-        '.announce',
+        '#carousel',
         {
             scrollTrigger:{
-                trigger:'.announce',
-                start:'top center'
+                trigger:'#carousel',
+                start:'top 30%'
             },
-            opacity:1,
-            duration:0.5
+            opacity:1,y:0,ease:"ease-in",
+            duration:1
         }
     );
     gsap.to(
