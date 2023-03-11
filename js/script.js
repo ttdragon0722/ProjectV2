@@ -101,7 +101,7 @@ $(document).ready(function () {
     // mobile menu dropdown setup + button
     $.ajax({
         type: "GET",
-        url: "../jsons/link.json",
+        url: "./jsons/link.json",
         data: {},
         dataType: "json",
         success: function (response) {
