@@ -15,7 +15,12 @@
   - [x] body的元件 邊界修齊
 - **Map**
   - [x] map 邊界修飾
-
+- **Footer**
+  - [x] Link icon 增可以塞到13個    
+  - [x] Footer改成三排    
+  - [x] Footer 改1比3 ( 1: logo + fb  3:fast link)    
+  - [x] Footer往上的箭頭
+  
 - **Product**
   - [ ] Product 篩選介面往左移 當成標題 +一個地方可以加英文
   - [ ] Product 篩選內距加大  延伸成一大條 顏色很淺的灰
@@ -33,12 +38,7 @@
   - [ ] 間距調小
   - [ ] 圖片改成圓形
 
-- **Footer**
-  - [ ] Link icon 增可以塞到13個    
-  - [ ] Footer改成三排    
-  - [ ] Footer 改1比3 ( 1: logo + fb  3:fast link)    
-  - [ ] Footer往上的箭頭
-  
+
 
 - **Mobile**
   - [x] Mobile menu link padding 加大

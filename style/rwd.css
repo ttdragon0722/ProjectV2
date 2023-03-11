@@ -1,6 +1,6 @@
 /* mobile */
 
-@media (min-width : 300px) and (max-width : 400px) {
+/* @media (min-width : 300px) and (max-width : 400px) {
     .main_subtitle {
         font-size: 15px;
     }
@@ -95,7 +95,7 @@
         margin-top: 8vh;
         flex-direction: column;
     }
-}
+} */
 
 @media (max-width:991px) {
     .main_title {

@@ -37,7 +37,9 @@
     <script src="js/anim.js"></script>
 </head>
 
-<body>
+<body id="body">
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0" nonce="5goK79nd"></script>
 
     <!-- mobile menu -->
     <section class="mobile_menu">
@@ -106,7 +108,7 @@
         </div>
     </section>
 
-    
+
     <!-- main page  -->
     <section class="main_page">
         <div class="main_page_content flex">
@@ -156,54 +158,78 @@
     <section class="footer">
         <div class="container">
             <div class="flex footer_main">
-                <!-- TODO -->
-                <div style="padding-bottom: 10vh;padding-top: 10vh;">
-                    <img src="Images/logo.png" alt="">
-                    <div style="width: 100%;height: 20vh;background-color: aqua;">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=180&height=70&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" style="width: 100%;height: 100%; border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <div class="footer_logo_side">
+                    <div>
+                        <img src="Images/logo.png" >
                     </div>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-adapt-container-width data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" ><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
                 </div>
-                <div class="flex footer_group">
-                    <div class="flex footer_inf">
-                        <div><a>關於我們</a></div>
-                        <div><a>最新消息</a></div>
-                        <div><a>產品型錄</a></div>
-                        <div><a>客戶案例</a></div>
-                        <div><a>公司地圖</a></div>
-                        <div><a>聯絡我們</a></div>
-                    </div>
-
-                    <div class="flex footer_btn_group">
-                        <button id="footer_lang_btn" class="footer_lang_btn" style="
-                        display: flex;flex-direction:row;align-items: center;
-                        ">
-                            <img src="Images/tw.svg" width="22" alt="tw">
-                            <div>繁體中文</div>
-                            <i class="fa-solid fa-caret-down"></i>
-                        </button>
-                        <div class="flex footer_icon_group">
-                            <a href="" target="_blank">
-                                <img src="Images/img_facebook.svg" width="35" alt="">
-                            </a>
-
-                            <a href="" target="_blank">
-                                <img src="Images/img_instagram.svg" width="35" alt="">
-                            </a>
-
-                            <a href="" target="_blank">
-                                <img src="Images/img_youtube.svg" width="35" alt="">
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="Images/img_line.svg" width="35" alt="">
-                            </a>
-
-                            <a href="" target="_blank">
-                                <img src="Images/img_store.svg" width="35" alt="">
-                            </a>
+                <div class="footer_content">
+                    <div class="footer_fastLink">
+                        <div class="fastLink_row">
+                            <a href=""><div>品牌資訊</div></a>
+                            <a href=""><div>門市據點</div></a>
+                            <a href=""><div>禮贈品客製化</div></a>
+                            <a href=""><div>聯絡我們</div></a>
+                        </div>
+                        <div class="fastLink_row">
+                            <a href=""><div>會員權益說明</div></a>
+                            <a href=""><div>付款方式</div></a>
+                            <a href=""><div>寄送服務</div></a>
+                            <a href=""><div>售後服務</div></a>
+                        </div>
+                        <div class="fastLink_row">
+                            <a href=""><div>媒體報導</div></a>
+                            <a href=""><div>隱私權條款</div></a>
+                            <a href=""><div>場地租借(台中)</div></a>
+                            <a href=""><div>團體行程(台中)</div></a>
                         </div>
                     </div>
+                    <div class="footer_icons">
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </div> 
+            <div style="font-size: 50px;text-align: center;padding-bottom: 5vh;"><a href="#body"><i class="fa-regular fa-circle-up"></i></a></div>
         </div>
         </div>
         <div class="copyright">
