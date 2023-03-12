@@ -32,8 +32,13 @@
 
 
 /* carousel */
+.carousel {background-color: rgba(204, 203, 203, 0.2);}
 .carousel-btn {color: rgba(255, 255, 255, .5);background-color: rgba(0, 0, 0, .1);}
 .carousel-btn:hover,.carousel-btn:focus {color: white;background-color: rgba(0, 0, 0, .2);}
+
+/* service */
+.service title p {color: rgb(18, 18, 18);}
+.service_img  {background-color: rgba(204, 203, 203, 0.2);}
 
 /* footer */
 .footer {background-color: #3C4144;color: white;}

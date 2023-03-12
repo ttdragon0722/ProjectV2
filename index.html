@@ -38,8 +38,10 @@
 </head>
 
 <body id="body">
+    <!-- facebook thing -->
     <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0" nonce="5goK79nd"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0"
+        nonce="5goK79nd"></script>
 
     <!-- mobile menu -->
     <section class="mobile_menu">
@@ -60,12 +62,13 @@
         <div class="mobile_menu_bg" style="display: none;">
             <!-- menu link -->
             <div class="mobile_menu_group" style="overflow-y: scroll;"></div>
+        </div>
     </section>
-
 
     <!-- function area -->
     <section class="function_area header">
         <div class="container flex">
+            <!-- left side -->
             <div class="navbar function_bar">
                 <a href="">
                     <div class="navbar_icon">回首頁</div>
@@ -80,6 +83,7 @@
                     <div class="navbar_icon">結帳</div>
                 </a>
                 <div class="navbar_icon">語系<i class="fa-solid fa-caret-down"></i>
+                    <!-- dropdown -->
                     <div class="navbar_dropdown">
                         <a href="" class="navbar_dropdown_item">
                             <div>中文</div>
@@ -90,6 +94,7 @@
                     </div>
                 </div>
                 <div class="navbar_icon">簡繁轉換<i class="fa-solid fa-caret-down"></i>
+                    <!-- dropdown -->
                     <div class="navbar_dropdown">
                         <a href="" class="navbar_dropdown_item">
                             <div>簡體中文</div>
@@ -100,9 +105,8 @@
                     </div>
                 </div>
             </div>
+            <!-- right side -->
             <div style="width: 100%;text-align: right;">
-                <!--                 
-                <input type="text" class="input_search" placeholder="Type to Search..."> -->
                 <button class="btn_search"><i class="fas fa-search"></i></button>
             </div>
         </div>
@@ -110,12 +114,17 @@
 
     <!-- fix button -->
     <section class="fixed_menu">
+        <!-- search btn -->
         <button class="fixed_btn" id="fixed_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- shopping car -->
         <button class="fixed_btn" id="shopping_car">
             <i class="fa-solid fa-cart-shopping"></i>
+            <!-- number of shopping car -->
             <div class="shopping_car_count">5</div>
         </button>
-        <button class="fixed_btn" id="top_btn" onclick="location.href='#body'" ><i class="fa-solid fa-angle-up"></i></button>
+        <!-- back btn -->
+        <button class="fixed_btn" id="top_btn" onclick="location.href='#body'"><i
+                class="fa-solid fa-angle-up"></i></button>
     </section>
 
     <!-- search model -->
@@ -126,51 +135,65 @@
     <!-- main page  -->
     <section class="main_page">
         <div class="main_page_content flex">
+            <!-- logo -->
             <div class="main_title" style="opacity: 0;">
                 <img src="Images/logo.png" alt="logo">
             </div>
+            <!-- subtitle -->
             <div class="main_subtitle" style="color: white;opacity: 0;">
                 <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rem asperiores non dolorem
                     minima
                     omnis repellendus officia cumque, ab expedita nesciunt error accusantium ratione quibusdam nobis qui
                     incidunt tempore iusto!</div>
             </div>
+            <!-- link part -->
             <div class="main_wrap_group" style="opacity: 0;"></div>
         </div>
 
+        <!-- keep down btn -->
         <div class="keep_read_btn" style="opacity: 0;">
             <a href="#carousel"><i class="fa-solid fa-chevron-down"></i></a>
         </div>
+        <!-- footer -->
         <div class="main_footer"></div>
     </section>
 
     <!-- body -->
     <section class="body">
         <div class="container">
+            <!-- carousel -->
             <section id="carousel" class="carousel" data-carousel>
-                <button class="carousel-btn prev" data-carousel-btn="prev"><i class="fa-solid fa-caret-left"></i></button>
-                <button class="carousel-btn next" data-carousel-btn="next"><i class="fa-solid fa-caret-right"></i></button>
+                <!-- prev btn -->
+                <button class="carousel-btn prev" data-carousel-btn="prev"><i
+                        class="fa-solid fa-caret-left"></i></button>
+                <!-- next btn -->
+                <button class="carousel-btn next" data-carousel-btn="next"><i
+                        class="fa-solid fa-caret-right"></i></button>
                 <ul data-slides>
+                    <!-- carousel img -->
                     <li class="slide" data-active>
                         <img src="./Images/公告1.jpg" alt="">
                     </li>
-                    <li class="slide" >
+                    <li class="slide">
                         <img src="./Images/公告2.jpg" alt="">
                     </li>
                     <li class="slide">
                         <img src="./Images/公告3.jpg" alt="">
-                    </li> 
+                    </li>
                     <li class="slide">
                         <img src="./Images/公告4.jpg" alt="">
-                    </li> 
+                    </li>
                 </ul>
             </section>
 
+            <!-- service page -->
             <section class="service">
+                <!-- big title -->
                 <div class="service_title">
                     <h1>我們的服務</h1>
                     <p>我們提供更多更棒的服務，歡迎您進入網站挑選</p>
                 </div>
+                <!-- service group -->
                 <div class="service_group">
                     <div class="service_item">
                         <div class="service_img">
@@ -196,8 +219,16 @@
                 </div>
             </section>
 
+            <!-- product -->
+            <section class="product">
+                
+            </section>
+
+            <!-- map -->
             <section class="map_page">
-                <iframe class="map "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6265973249333!2d120.68158251486757!3d24.149748179320216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d68cf62e061%3A0x7091dd73273f6236!2z5ZyL56uL6Ie65Lit56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1666889270956!5m2!1szh-TW!2stw"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map "
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6265973249333!2d120.68158251486757!3d24.149748179320216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d68cf62e061%3A0x7091dd73273f6236!2z5ZyL56uL6Ie65Lit56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1666889270956!5m2!1szh-TW!2stw"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </div>
     </section>
@@ -206,33 +237,67 @@
     <section class="footer">
         <div class="container">
             <div class="flex footer_main">
+                <!-- left side -->
                 <div class="footer_logo_side">
                     <div>
-                        <img class="footer_logo" src="Images/logo.png" >
+                        <img class="footer_logo" src="Images/logo.png">
                     </div>
-                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-adapt-container-width width="270" height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" ><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs=""
+                        data-adapt-container-width width="270" height="" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                    </div>
                 </div>
+                <!-- right side -->
                 <div class="footer_content">
+                    <!-- fast link -->
                     <div class="footer_fastLink">
                         <div class="fastLink_row">
-                            <a href=""><div>品牌資訊</div></a>
-                            <a href=""><div>門市據點</div></a>
-                            <a href=""><div>禮贈品客製化</div></a>
-                            <a href=""><div>聯絡我們</div></a>
+                            <a href="">
+                                <div>品牌資訊</div>
+                            </a>
+                            <a href="">
+                                <div>門市據點</div>
+                            </a>
+                            <a href="">
+                                <div>禮贈品客製化</div>
+                            </a>
+                            <a href="">
+                                <div>聯絡我們</div>
+                            </a>
                         </div>
                         <div class="fastLink_row">
-                            <a href=""><div>會員權益說明</div></a>
-                            <a href=""><div>付款方式</div></a>
-                            <a href=""><div>寄送服務</div></a>
-                            <a href=""><div>售後服務</div></a>
+                            <a href="">
+                                <div>會員權益說明</div>
+                            </a>
+                            <a href="">
+                                <div>付款方式</div>
+                            </a>
+                            <a href="">
+                                <div>寄送服務</div>
+                            </a>
+                            <a href="">
+                                <div>售後服務</div>
+                            </a>
                         </div>
                         <div class="fastLink_row">
-                            <a href=""><div>媒體報導</div></a>
-                            <a href=""><div>隱私權條款</div></a>
-                            <a href=""><div>場地租借(台中)</div></a>
-                            <a href=""><div>團體行程(台中)</div></a>
+                            <a href="">
+                                <div>媒體報導</div>
+                            </a>
+                            <a href="">
+                                <div>隱私權條款</div>
+                            </a>
+                            <a href="">
+                                <div>場地租借(台中)</div>
+                            </a>
+                            <a href="">
+                                <div>團體行程(台中)</div>
+                            </a>
                         </div>
                     </div>
+
+                    <!-- icons -->
                     <div class="footer_icons">
                         <a href="" target="_blank">
                             <img src="Images/img_facebook.svg" width="35" alt="">
@@ -252,7 +317,7 @@
                         <a href="" target="_blank">
                             <img src="Images/img_facebook.svg" width="35" alt="">
                         </a>
-                        
+
                         <a href="" target="_blank">
                             <img src="Images/img_facebook.svg" width="35" alt="">
                         </a>
@@ -276,10 +341,14 @@
                         </a>
                     </div>
                 </div>
-            </div> 
-            <div style="font-size: 50px;text-align: center;padding-bottom: 5vh;"><a href="#body"><i class="fa-regular fa-circle-up"></i></a></div>
+            </div>
+
+            <!-- back top btn -->
+            <div style="font-size: 50px;text-align: center;padding-bottom: 5vh;"><a href="#body"><i
+                        class="fa-regular fa-circle-up"></i></a></div>
         </div>
-        </div>
+
+        <!-- copyright  -->
         <div class="copyright">
             <div class="container flex">
                 <div>
