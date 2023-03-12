@@ -1,3 +1,42 @@
+/* footer */
+
+@media (max-width:500px) {
+    .footer_fastLink {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .fastLink_row {
+        width: calc(100%/2);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+}
+
+@media (max-width:900px) {
+    .footer_main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_logo_side {
+        margin-top: 10vh
+    }
+    
+    .footer_content {
+        width: 100%;
+    }
+
+    .footer_icons {
+        margin: 0 0;
+    }
+
+}
+
+
 /* mobile */
 
 /* @media (min-width : 300px) and (max-width : 400px) {

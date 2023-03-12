@@ -630,6 +630,10 @@ button {
     flex-direction: column;
 }
 
+.footer_logo {
+    margin: 5vh 0;
+}
+
 .footer_content {
     display: flex;
     flex-direction: column;
@@ -642,7 +646,7 @@ button {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 10vh 0;
+    padding: 10vh 0 5vh;
 }
 
 .fastLink_row {
