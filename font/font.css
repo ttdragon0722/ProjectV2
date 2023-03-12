@@ -22,6 +22,11 @@
     src: url("./Noto_Serif_TC/NotoSerifTC-Bold.otf");
 }
 @font-face {
+    font-family: "NotoSerifTC Black";
+    src: url("./Noto_Serif_TC/NotoSerifTC-Black.otf");
+}
+
+@font-face {
     font-family: "NotoSerifTC Regular";
     src: url("./Noto_Serif_TC/NotoSerifTC-Regular.otf");
 }

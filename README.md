@@ -28,17 +28,15 @@
 
 
 - **Fixed icon**
-  - [ ] 購物車icon 外面加一個數量的圖示
+  - [x] 購物車icon 外面加一個數量的圖示
   - [ ] 搜尋按鈕
-  - [ ] 綁定fixed
-  - [ ] 回到最上層
+  - [x] 綁定fixed
+  - [x] 回到最上層
 
 - **Service**
-  - [ ] Service 圖片比例固定 (1：1)
-  - [ ] 間距調小
-  - [ ] 圖片改成圓形
-
-
+  - [x] Service 圖片比例固定 (1：1)
+  - [x] 間距調小
+  - [x] 圖片改成圓形
 
 - **Mobile**
   - [x] Mobile menu link padding 加大
