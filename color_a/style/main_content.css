@@ -35,6 +35,13 @@
 .carousel-btn {color: rgba(255, 255, 255, .5);background-color: rgba(0, 0, 0, .1);}
 .carousel-btn:hover,.carousel-btn:focus {color: white;background-color: rgba(0, 0, 0, .2);}
 
+/* footer */
+.footer {background-color: #3C4144;color: white;}
+.footer_lang_btn {background-color: rgba(0, 0, 0, .8);color: white;}
+.footer_lang_btn:hover{background-color: rgba(65, 65, 65, 0.8);}
+.footer_inf div :hover {border-color: white;}
+
+.copyright {background-color: #323638;}
 
 
 /* ====== still don't check ==========================*/
@@ -58,10 +65,3 @@
 
 .productSelect{background-color:rgba(255, 255, 255, .8) !important ;color: black !important ;}
 
-/* footer */
-.footer {background-color: #3C4144;color: white;}
-.footer_lang_btn {background-color: rgba(0, 0, 0, .8);color: white;}
-.footer_lang_btn:hover{background-color: rgba(65, 65, 65, 0.8);}
-.footer_inf div :hover {border-color: white;}
-
-.copyright {background-color: #323638;}

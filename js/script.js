@@ -40,6 +40,10 @@ $(document).ready(function () {
         }
     })
 
+    
+    
+
+
     // modal open & close 
     // $('#lang_btn').click(function (e) {
     //     e.preventDefault();
@@ -171,6 +175,9 @@ $(document).ready(function () {
             fadeOut($(this).children(".navbar_dropdown"));
         }
     });
+
+
+    
 
 });
 
