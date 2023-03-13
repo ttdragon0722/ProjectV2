@@ -8,6 +8,12 @@
 .navbar_dropdown {background-color: white;box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);}
 .navbar_dropdown_item div:hover {background-color: rgb(201, 201, 201)}
 
+/* fixed_btn */
+.fixed_btn {background-color: rgba(0, 0, 0, .78);color: white;}
+#shopping_car .shopping_car_count {background-color: rgba(255, 0, 0, .9);}
+
+/* search model */
+.search_model_content {background-color: white;}
 
 /* menu */
 .mobile_menu {background-color: white;}
@@ -18,7 +24,6 @@
 
 
 /* main page */
-.main_page {background-image: url('../../Images/homepage_background.jpg');background-repeat: no-repeat;background-position: center; background-size: auto;}
 .main_title {filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, .8));}
 .main_subtitle {filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .8));}
 .main_wrap_btn {background-color: rgba(0, 0, 0, 0.4);border-color: black;color: white;filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5));}
@@ -41,7 +46,9 @@
 .service_img  {background-color: rgba(204, 203, 203, 0.2);}
 
 /* product */
+.product_item{background-color: white;}
 .product_item:hover {background-color: rgba(204, 203, 203, 0.2);}
+.product_img {background-color: rgba(204, 203, 203, 0.2);}
 .ctrl_group {background-color:#323638;color: white;}
 
 /* footer */

@@ -23,13 +23,13 @@
   
 - **Product**
   - [x] Product 篩選介面往左移 當成標題 +一個地方可以加英文
-  - [ ] Product 篩選內距加大  延伸成一大條 顏色很淺的灰
-  - [ ] Product 的換頁按鈕的 距離加大 字變小
+  - [ ? ] Product 篩選內距加大  延伸成一大條 顏色很淺的灰
+  - [ ? ] Product 的換頁按鈕的 距離加大 字變小
 
 
 - **Fixed icon**
   - [x] 購物車icon 外面加一個數量的圖示
-  - [ ] 搜尋按鈕
+  - [x] 搜尋按鈕
   - [x] 綁定fixed
   - [x] 回到最上層
 
@@ -41,9 +41,9 @@
 - **Mobile**
   - [x] Mobile menu link padding 加大
   - [x] Function bar+搜尋  logo移中間
-  - [ ] search model
   - [x] 間距貼齊
   - [x] 手機板圓弧刪除
+  - [?] search model
 
 
 ##**PC Menu Sample**
