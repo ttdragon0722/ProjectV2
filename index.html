@@ -107,7 +107,7 @@
             </div>
             <!-- right side -->
             <div style="width: 100%;text-align: right;">
-                <button class="btn_search"><i class="fas fa-search"></i></button>
+                <button class="search_btn"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </section>
@@ -115,9 +115,9 @@
     <!-- fix button -->
     <section class="fixed_menu">
         <!-- search btn -->
-        <button class="fixed_btn" id="fixed_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="fixed_btn search_btn" id="fixed_search"><i class="fa-solid fa-magnifying-glass"></i></button>
         <!-- shopping car -->
-        <button class="fixed_btn" id="shopping_car">
+        <button class="fixed_btn" id="shopping_car" onclick="location.href=''">
             <i class="fa-solid fa-cart-shopping"></i>
             <!-- number of shopping car -->
             <div class="shopping_car_count">5</div>
@@ -128,12 +128,15 @@
     </section>
 
     <!-- search model -->
-    <section class="search_model" style="display: none;">
-        <div class="modal_bg">
-            <div class="search_model_content">
-                <div>hhaa</div>
-                <hr>
-            </div>
+    <section class="search_model" style="display:none;">
+        <div class="search_box">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text"/>
+            <button class="search_close">
+                <i class="fa-solid fa-xmark" ></i>
+            </button>
         </div>
     </section>
 

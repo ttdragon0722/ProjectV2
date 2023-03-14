@@ -42,6 +42,24 @@
     }
 }
 
+/* search_btn */
+
+@media (max-width:990px) {
+    .search_model {
+        padding: 0 2%;
+        width: 60%;
+        right: 2%;
+        top: 12vh;
+        box-shadow: unset;
+    }
+}
+
+@media (max-width:450px) {
+    .search_model {
+        width: 90% !important;
+    }
+}
+
 /* carousel */
 
 @media (max-width:850px) {
