@@ -104,6 +104,11 @@ button {
     width: 100%;
 }
 
+.function_area .container {
+    padding: 0px;
+}
+
+
 .function_bar {
     width: 100%;
 

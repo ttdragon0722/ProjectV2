@@ -60,7 +60,7 @@
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:450px) { 
     .search_model {
         width: 90% !important;
     }
@@ -104,105 +104,28 @@
 
 }
 
+@media (max-width:450px) {
+    .main_page {
+        margin-bottom: 5vh;
+    }
 
-/* mobile */
-
-/* @media (min-width : 300px) and (max-width : 400px) {
-    .main_subtitle {
-        font-size: 15px;
+    .main_title {
+        margin: 1.5vw 1.5vw !important;
+    }
+    .main_title img {
+        transform: scale(90%) !important;
     }
 }
 
-
-
-@media (max-width:460px) {
-    .classes {
-        font-size: 13px;
+@media (max-width:700px) {
+    .main_title {
+        margin: 5vh 5vh !important;
     }
 }
-
-@media (max-width:480px) {
-    .footer_btn_group { 
-        flex-direction: column;
-    }
-}
-
-@media (max-width:500px) {
-    .main_footer {
-        height: 3vh;
-    }
-}
-
-@media (max-width:580px) {
-    .classes .class_btn {
-        font-size: 15px;
-    }
-}
-
-@media (max-width:600px) {
-    .announce {
-        padding-top: 0;
-        flex-direction: column;
-    }
-
-    .announce img {
-        width: 100%;
-    }
-
-    .service_group {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .service_group div img {
-        width: 50vh;
-    }
-}
-
-@media (max-width:650px) and (min-width:600px) {
-    .service_group div img {
-        width: 50%;
-    }
-}
-
-@media (max-width:650px) {
-    .service_group {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .service_item {
-        min-height: 80vh;
-        justify-content: center;
-    }
-
-    .service_item p {
-        padding-top: 0px;
-        padding-bottom: 5vh;
-    }
-
-    .product_list {
-        width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .product_item {
-        width: 44%;
-    }
-
-}
-
-@media (max-width:800px) {
-    .footer_main {
-        margin-top: 8vh;
-        flex-direction: column;
-    }
-} */
 
 @media (max-width:991px) {
     .main_title {
-        margin-top: 10vh;
+        /* margin-top: 10vh; */
     }
 
     .main_page {
@@ -214,5 +137,9 @@
         transform: scale(120%);
     }
 }
-
+@media (max-width:1100px) {
+    .main_title img {
+        transform: scale(105%);
+    }
+}
 

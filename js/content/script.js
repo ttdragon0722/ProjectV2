@@ -145,7 +145,7 @@ $(document).ready(function () {
                 $('body').css('overflow-y', 'scroll');
             }
             gsap.set(".search_model", {
-                xPercent: 100
+                xPercent: 120
             });
             search_model.css("display", "block");
             gsap.to(".search_model",
@@ -158,7 +158,7 @@ $(document).ready(function () {
         } else if (search_model.css("display") === "block") {
             gsap.to(".search_model",
                 {
-                    xPercent: 100,
+                    xPercent: 120,
                     duration: 0.2,
                     onComplete: () => {
                         search_model.css("display", "none");
@@ -175,7 +175,7 @@ $(document).ready(function () {
         e.preventDefault();
         gsap.to(".search_model",
             {
-                xPercent: 100,
+                xPercent: 120,
                 duration: 0.2,
                 onComplete: () => {
                     search_model.css("display", "none");
