@@ -123,6 +123,14 @@
     }
 }
 
+
+@media (max-width:850px) {
+    .content_img  {
+        height: 65vw;
+    }
+}
+
+
 @media (max-width:991px) {
     .main_title {
         /* margin-top: 10vh; */
