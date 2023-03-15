@@ -103,7 +103,6 @@ $(document).ready(function () {
             };
 
             $('.sidebar_item_title').click(function (e) {
-                e.preventDefault();
                 if ($(this).siblings('.sidebar_item_dropdown').css('display') === 'none') {
                     $(this).siblings('.sidebar_item_dropdown').show();
                 } else {

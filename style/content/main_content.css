@@ -309,7 +309,7 @@ button {
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
 }
 
 .main_page_background {
@@ -466,6 +466,24 @@ button {
 .text h5 {
     font-family: "NotoSerifTC Black" ,sans-serif;
     margin-bottom: 1%;
+    position: relative;
+}
+
+
+.title_mark {
+    padding-left: 2%;
+    position: relative;
+}
+
+.title_mark::before {
+    content: "";
+    width: 3px;
+    height: 85%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: calc(10%);
+    border-radius: 2px;
 }
 
 .text div ,.text p ,.text span {
@@ -485,6 +503,7 @@ button {
 .pic_wrap_left {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .pic_wrap_left img{
@@ -515,6 +534,48 @@ button {
     text-align: center;
     vertical-align:middle;
 }
+
+.exhibition_article_left {
+    display: flex;
+}
+.exhibit_content {
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.exhibit_title {
+    margin-bottom: 10%;
+    background-color: black;
+    color: white;
+    padding: 1% 3%;
+}
+.exhibit_content p {
+    font-size: 16px;
+}
+.exhibition_article_right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.exhibit_content {
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.exhibition_article {
+    margin: 5vh 0 ;
+}
+
+.exhibition_article img {
+    width: 70%;
+    border-radius: 10px;
+}
+
 
 /* ======= footer ============= */
 

@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="font/font.css">
 
     <!-- public -->
-    <link rel="stylesheet" href="style/main_content.css">
+    <link rel="stylesheet" href="style/content/main_content.css">
 
     <!-- color -->
     <link rel="stylesheet" href="color_a/style/main_content.css">
     <!-- <link rel="stylesheet" href="color_b/style/main_content.css"> -->
 
     <!-- rwd -->
-    <link rel="stylesheet" href="style/rwd.css">
+    <link rel="stylesheet" href="style/content/rwd.css">
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
@@ -33,12 +33,11 @@
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/anim.js"></script>
+    <script src="js/script_content.js"></script>
+    <script src="js/anim_content.js"></script>
 </head>
 
 <body id="body">
-    
     <!-- facebook thing -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0"
@@ -71,7 +70,7 @@
         <div class="container flex">
             <!-- left side -->
             <div class="navbar function_bar">
-                <a href="">
+                <a href="./index.html">
                     <div class="navbar_icon">回首頁</div>
                 </a>
                 <a href="">
@@ -134,9 +133,9 @@
             <button>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <input type="text"/>
+            <input type="text" />
             <button class="search_close">
-                <i class="fa-solid fa-xmark" ></i>
+                <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
     </section>
@@ -147,211 +146,45 @@
     <!-- main page  -->
     <section class="main_page">
         <img class="main_page_background" src="Images/homepage1.jpg" alt="">
-        <div class="main_page_content flex">
+        <div class="main_page_content container">
             <!-- logo -->
             <div class="main_title" style="opacity: 0;">
                 <img src="Images/logo.png" alt="logo">
             </div>
-            <!-- subtitle -->
-            <div class="main_subtitle" style="color: white;opacity: 0;">
-                <div>一個有支援rwd功能的demo網站嘿嘿，希望你會喜歡，下面有carousel 介紹頁面 產品頁面 地圖頁面 跟頁尾</div>
-                <div>this is a website that my classmate,Lynn,my good friend find me to do it   haha</div>
-            </div>
-            <!-- link part -->
-            <div class="main_wrap_group" style="opacity: 0;"></div>
         </div>
-
-        <!-- keep down btn -->
-        <div class="keep_read_btn" style="opacity: 0;">
-            <a href="#carousel"><i class="fa-solid fa-chevron-down"></i></a>
-        </div>
-        <!-- footer -->
-        <div class="main_footer"></div>
     </section>
 
     <!-- body -->
     <section class="body">
+        <!-- content -->
         <div class="container">
-            <!-- carousel -->
-            <section id="carousel" class="carousel" data-carousel>
-                <!-- prev btn -->
-                <button class="carousel-btn prev" data-carousel-btn="prev"><i
-                        class="fa-solid fa-caret-left"></i></button>
-                <!-- next btn -->
-                <button class="carousel-btn next" data-carousel-btn="next"><i
-                        class="fa-solid fa-caret-right"></i></button>
-                <ul data-slides>
-                    <!-- carousel img -->
-                    <li class="slide" data-active>
-                        <img src="./Images/公告1.jpg" alt="">
-                    </li>
-                    <li class="slide">
-                        <img src="./Images/公告2.jpg" alt="">
-                    </li>
-                    <li class="slide">
-                        <img src="./Images/公告3.jpg" alt="">
-                    </li>
-                    <li class="slide">
-                        <img src="./Images/公告4.jpg" alt="">
-                    </li>
-                </ul>
-            </section>
-
-            <!-- service page -->
-            <section class="service">
-                <!-- big title -->
-                <div class="service_title">
-                    <h1>我們的服務</h1>
-                    <p>我們提供更多更棒的服務，歡迎您進入網站挑選</p>
+            <a href="./index.html" class="back_home">
+                <div>
+                    <i class="fa-solid fa-square-caret-left"></i> 回首頁
                 </div>
-                <!-- service group -->
-                <div class="service_group">
-                    <div class="service_item">
-                        <div class="service_img">
-                            <img src="Images/公告1.jpg" alt="">
-                        </div>
-                        <h1>快速架站與上線</h1>
-                        <p>EZ架站雲開站速度快，不需另租虛擬主機，免安裝免繁鎖設定更不需專業人士即會使用，最快不用1小時即可開通上線。</p>
-                    </div>
-                    <div class="service_item">
-                        <div class="service_img">
-                            <img src="Images/公告2.jpg" alt="">
-                        </div>
-                        <h1>雲端技術平台</h1>
-                        <p>系統以最新雲端技術開發而成,不必架設以及租用虛擬主機，不必安裝任何軟體,能上網即可輕鬆使用。</p>
-                    </div>
-                    <div class="service_item">
-                        <div class="service_img">
-                            <img src="Images/公告3.jpg" alt="">
-                        </div>
-                        <h1>RWD嚮應式網站</h1>
-                        <p>新式的RWD網頁設計嚮應式技術讓您的網站打破設備隔閡，無論是桌機、平板、手機，3機一體大小通吃。</p>
-                    </div>
+            </a>
+            <div style="margin: 3% 2%;"><h2 class="title_mark">關於我們</h2><h4>About Us</h4></div>
+            <div class="exhibition_article_left exhibition_article">
+                <img src="Images/exhibit1.jpg" alt="" >
+                <div class="exhibit_content">
+                    <div class="exhibit_title">一張橘色沙發</div>
+                    <p>在一張純白色的背景上，放置著一個鮮豔橘色的沙發，它們形成了一種鮮明的對比，令人眼前一亮。這個橘色沙發的顏色散發出活力和溫暖的感覺，讓人感到舒適和放鬆。</p>
                 </div>
-            </section>
-
-            <!-- product -->
-            <section class="product">
-                <div class="product_title">
-                    <h1>產品介紹</h1>
-                    <p>Product</p>
+            </div>
+            <div class="exhibition_article_right exhibition_article">
+                <img src="Images/exhibit2.jpg" alt="" >
+                <div class="exhibit_content">
+                    <div class="exhibit_title">簡約優雅的閱讀角落</div>
+                    <p>這個房間裡有一個白色的櫃子，上面擺滿了裝飾品和書籍，兩張紫色的椅子放在櫃子旁邊，舒適而優雅。一張高腳桌靜靜地站在角落，營造出一種輕鬆自在的氛圍。</p>
                 </div>
-                <div class="product_content">
-                    
-                    <a href="" class="product_item">
-                        <div class="product_container">
-                            <div class="product_img">
-                                <img src="Images/公告1.jpg" alt="haha">
-                            </div>
-                            <div class="product_item_content">
-                                <div class="product_item_text">
-                                    <h1>A thing</h1>
-                                    <p>this is a product.</p>
-                                </div>
-                                <div class="product_price">
-                                    <h1 class="price">9487</h1>
-                                    <p class="onSale">10000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="product_item">
-                        <div class="product_container">
-                            <div class="product_img">
-                                <img src="Images/公告2.jpg" alt="haha">
-                            </div>
-                            <div class="product_item_content">
-                                <div class="product_item_text">
-                                    <h1>A thing</h1>
-                                    <p>this is a product.</p>
-                                </div>
-                                <div class="product_price">
-                                    <h1 class="price">9487</h1>
-                                    <p class="onSale">10000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="product_item">
-                        <div class="product_container">
-                            <div class="product_img">
-                                <img src="Images/公告3.jpg" alt="haha">
-                            </div>
-                            <div class="product_item_content">
-                                <div class="product_item_text">
-                                    <h1>A thing</h1>
-                                    <p>this is a product.</p>
-                                </div>
-                                <div class="product_price">
-                                    <h1 class="price">9487</h1>
-                                    <p class="onSale">10000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="product_item">
-                        <div class="product_container">
-                            <div class="product_img">
-                                <img src="Images/公告1.jpg" alt="haha">
-                            </div>
-                            <div class="product_item_content">
-                                <div class="product_item_text">
-                                    <h1>A thing</h1>
-                                    <p>this is a product.</p>
-                                </div>
-                                <div class="product_price">
-                                    <h1 class="price">9487</h1>
-                                    <p class="onSale">10000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="product_item">
-                        <div class="product_container">
-                            <div class="product_img">
-                                <img src="Images/公告2.jpg" alt="haha">
-                            </div>
-                            <div class="product_item_content">
-                                <div class="product_item_text">
-                                    <h1>A thing</h1>
-                                    <p>this is a product.</p>
-                                </div>
-                                <div class="product_price">
-                                    <h1 class="price">9487</h1>
-                                    <p class="onSale">10000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="product_item">
-                        <div class="product_container">
-                            <div class="product_img">
-                                <img src="Images/公告3.jpg" alt="haha">
-                            </div>
-                            <div class="product_item_content">
-                                <div class="product_item_text">
-                                    <h1>A thing</h1>
-                                    <p>this is a product.</p>
-                                </div>
-                                <div class="product_price">
-                                    <h1 class="price">9487</h1>
-                                    <p class="onSale">10000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+            </div>
+            <div class="exhibition_article_left exhibition_article">
+                <img src="Images/exhibit3.jpg" alt="" >
+                <div class="exhibit_content">
+                    <div class="exhibit_title">海藍色的寧靜空間</div>
+                    <p>這個客廳空間以藍色系為主調，彷彿置身於海洋中，寧靜而舒適。一個寬敞的沙發和一張大桌子讓人感到放鬆和自在，而窗外的海景和山景則增添了視覺上的愉悅。</p>
                 </div>
-                <a href="" class="more_btn">
-                    <div>查看更多</div>
-                </a>
-            </section>
-
-            <!-- map -->
-            <section class="map_page">
-                <iframe class="map "
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6265973249333!2d120.68158251486757!3d24.149748179320216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d68cf62e061%3A0x7091dd73273f6236!2z5ZyL56uL6Ie65Lit56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1666889270956!5m2!1szh-TW!2stw"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+            </div>
         </div>
     </section>
 
