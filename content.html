@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Version 2</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="font/font.css">
+
+    <!-- public -->
+    <link rel="stylesheet" href="style/content/main_content.css">
+
+    <!-- color -->
+    <link rel="stylesheet" href="color_a/style/main_content.css">
+    <!-- <link rel="stylesheet" href="color_b/style/main_content.css"> -->
+
+    <!-- rwd -->
+    <link rel="stylesheet" href="style/content/rwd.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+
+    <!-- js -->
+    <!-- 
+        jquery 3.6.
+        gsap 3.11.4
+    -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/content/script.js"></script>
+    <script src="js/content/anim.js"></script>
+</head>
+
+<body id="body">
+    <!-- facebook thing -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0"
+        nonce="5goK79nd"></script>
+
+    <!-- mobile menu -->
+    <section class="mobile_menu">
+        <!-- main header -->
+        <div class="mobile_header header">
+            <div class="container flex mobile_action">
+                <!-- menu -->
+                <button class="menu_btn"><i class="fa-solid fa-bars"></i></button>
+                <!-- logo -->
+                <img src="Images/logo_black2.png" style="height: 65%;">
+                <!-- search -->
+                <button class="search_btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <!-- menu display -->
+        <div class="mobile_menu_bg" style="display: none;">
+            <!-- menu link -->
+            <div class="mobile_menu_group" style="overflow-y: scroll;"></div>
+        </div>
+    </section>
+
+    <!-- function area -->
+    <section class="function_area header">
+        <div class="container flex">
+            <!-- left side -->
+            <div class="navbar function_bar">
+                <a href="./index.html">
+                    <div class="navbar_icon">回首頁</div>
+                </a>
+                <a href="">
+                    <div class="navbar_icon">聯絡我們</div>
+                </a>
+                <a href="">
+                    <div class="navbar_icon">購物清單</div>
+                </a>
+                <a href="">
+                    <div class="navbar_icon">結帳</div>
+                </a>
+                <div class="navbar_icon">語系<i class="fa-solid fa-caret-down"></i>
+                    <!-- dropdown -->
+                    <div class="navbar_dropdown">
+                        <a href="" class="navbar_dropdown_item">
+                            <div>中文</div>
+                        </a>
+                        <a href="" class="navbar_dropdown_item">
+                            <div>English</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar_icon">簡繁轉換<i class="fa-solid fa-caret-down"></i>
+                    <!-- dropdown -->
+                    <div class="navbar_dropdown">
+                        <a href="" class="navbar_dropdown_item">
+                            <div>簡體中文</div>
+                        </a>
+                        <a href="" class="navbar_dropdown_item">
+                            <div>繁體中文</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- right side -->
+            <div style="width: calc(100%/2);text-align: right;">
+                <button class="search_btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- fix button -->
+    <section class="fixed_menu">
+        <!-- search btn -->
+        <button class="fixed_btn search_btn" id="fixed_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- shopping car -->
+        <button class="fixed_btn" id="shopping_car" onclick="location.href=''">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <!-- number of shopping car -->
+            <div class="shopping_car_count">5</div>
+        </button>
+        <!-- back btn -->
+        <button class="fixed_btn" id="top_btn" onclick="location.href='#body'"><i
+                class="fa-solid fa-angle-up"></i></button>
+    </section>
+
+    <!-- search model -->
+    <section class="search_model" style="display:none;">
+        <div class="search_box">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" />
+            <button class="search_close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- shopping car model -->
+    <section class="shopping_car_model"></section>
+
+    <!-- main page  -->
+    <section class="main_page">
+        <img class="main_page_background" src="Images/homepage1.jpg" alt="">
+        <div class="main_page_content container">
+            <!-- logo -->
+            <div class="main_title" style="opacity: 0;">
+                <img src="Images/logo.png" alt="logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- body -->
+    <section class="body">
+        <!-- content -->
+        <div class="container content">
+            <!-- sidebar menu -->
+            <div class="sidebar">
+                <!-- back home button -->
+                <a href="./index.html" class="back_home">
+                    <div>
+                        <i class="fa-solid fa-square-caret-left"></i> 回首頁
+                    </div>
+                </a>
+                <div class="sidebar_list">
+                    <!-- sidebar items -->
+                </div>
+            </div>
+            <!-- main content -->
+            <div class="text">
+                <h1>最大的標題 The Biggest Title</h1>
+                <h2>第二大標題 The Bigger Title</h2>
+                <h3>第三個標題 The Normal Title</h3>
+                <h4>第四個標題 The Small Title</h4>
+                <h5>最小的標題 The Smallest Title</h5>
+                <hr/>
+                <div class="content_img">
+                    <img src="Images/homepage1.jpg" alt="">
+                </div>
+                <div class="pic_wrap_left">
+                    <img src="Images/product (1).png" alt="">
+                    <p>這張圖片是攝影師在白色攝影棚中拍攝的一個木塊裝置藝術品，由許多不同大小的木塊組成。木塊之間的空隙和紋理創造出一種獨特的視覺效果，使整個藝術品更加具有觀賞性和細節感。整個畫面充滿著現代感和簡約感。</p>
+                </div>
+
+                
+                <div class="pic_wrap_right">
+                    <p>這張圖片的明亮色調和白色背景營造出一種乾淨、簡約的氛圍，同時也使木塊的紋理和形狀更加突出，呈現出一種美感和和諧感。</p>
+                    <img src="Images/product (2).png" alt="">
+                </div>
+                <div>&emsp;&emsp;歡迎來到我們的about頁面，我們很高興能夠向您介紹我們的公司和我們的價值觀。
+                </div>
+                <div>
+                    &emsp;&emsp;我們的公司成立於20XX年，我們是一家致力於為客戶提供高品質產品和服務的公司。我們的目標是在我們所在的行業中成為領先者，並滿足客戶的需求和期望。
+                </div>
+                <div>
+                    &emsp;&emsp;我們的團隊由一群充滿活力和熱情的人組成，他們在自己的領域中都有豐富的經驗和專業知識。我們的員工不斷學習和提高自己的技能，以確保我們為客戶提供最好的產品和服務。
+                </div>
+                <div>
+                    &emsp;&emsp;我們的價值觀是基於客戶至上、誠信、創新和卓越。我們相信，只有通過尊重客戶的需求和要求，才能贏得客戶的信任和忠誠。我們將始終遵循誠信的原則，確保我們的業務運作符合最高的標準。
+                </div>
+                <div>
+                    &emsp;&emsp;同時，我們深信創新是我們成功的關鍵。我們不斷研發和改進我們的產品和服務，以滿足客戶不斷變化的需求。我們將繼續保持卓越，追求卓越，為客戶提供最好的體驗。
+                </div>
+                <div>
+                    &emsp;&emsp;最後，感謝您訪問我們的about頁面。我們期待著為您提供卓越的產品和服務，並與您建立長期合作的關係。
+                </div>
+                <div></div>
+                <div></div>
+                <div>
+                    &ensp; &ensp; &ensp; &ensp; &ensp; Welcome to our about page, and we are pleased to introduce our company and our values to you.
+                </div>
+                <div>
+                    &ensp; &ensp; &ensp; &ensp; &ensp; Our company was founded in 20XX, and we are dedicated to providing our customers with high-quality products and services. Our goal is to be a leader in our industry and meet the needs and expectations of our customers.
+                </div>
+                <div>
+                    &ensp; &ensp; &ensp; &ensp; &ensp; Our team is composed of a group of dynamic and passionate individuals who have rich experience and expertise in their respective fields. Our employees constantly learn and improve their skills to ensure that we provide the best products and services to our customers.
+                </div>
+                <div>
+                    &ensp; &ensp; &ensp; &ensp; &ensp; Our values are based on customer first, integrity, innovation, and excellence. We believe that only by respecting our customers' needs and requirements can we earn their trust and loyalty. We will always adhere to the principles of integrity to ensure that our business operates to the highest standards.
+                </div>
+
+                <div>
+                    &ensp; &ensp; &ensp; &ensp; &ensp; At the same time, we firmly believe that innovation is the key to our success. We continuously research and develop our products and services to meet our customers' ever-changing needs. We will continue to strive for excellence and provide our customers with the best experience.
+                </div>
+
+                <div>
+                    &ensp; &ensp; &ensp; &ensp; &ensp; Finally, thank you for visiting our about page. We look forward to providing you with excellent products and services and building a long-term relationship with you.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="flex footer_main">
+                <!-- left side -->
+                <div class="footer_logo_side">
+                    <div>
+                        <img class="footer_logo" src="Images/logo.png">
+                    </div>
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs=""
+                        data-adapt-container-width width="270" height="" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="footer_content">
+                    <!-- fast link -->
+                    <div class="footer_fastLink">
+                        <div class="fastLink_row">
+                            <a href="">
+                                <div>品牌資訊</div>
+                            </a>
+                            <a href="">
+                                <div>門市據點</div>
+                            </a>
+                            <a href="">
+                                <div>禮贈品客製化</div>
+                            </a>
+                            <a href="">
+                                <div>聯絡我們</div>
+                            </a>
+                        </div>
+                        <div class="fastLink_row">
+                            <a href="">
+                                <div>會員權益說明</div>
+                            </a>
+                            <a href="">
+                                <div>付款方式</div>
+                            </a>
+                            <a href="">
+                                <div>寄送服務</div>
+                            </a>
+                            <a href="">
+                                <div>售後服務</div>
+                            </a>
+                        </div>
+                        <div class="fastLink_row">
+                            <a href="">
+                                <div>媒體報導</div>
+                            </a>
+                            <a href="">
+                                <div>隱私權條款</div>
+                            </a>
+                            <a href="">
+                                <div>場地租借(台中)</div>
+                            </a>
+                            <a href="">
+                                <div>團體行程(台中)</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- icons -->
+                    <div class="footer_icons">
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="Images/img_facebook.svg" width="35" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- back top btn -->
+            <div style="font-size: 50px;text-align: center;padding-bottom: 5vh;"><a href="#body"><i
+                        class="fa-regular fa-circle-up"></i></a></div>
+        </div>
+
+        <!-- copyright  -->
+        <div class="copyright">
+            <div class="container flex">
+                <div>
+                    Copyright © Company
+                </div>
+                <div>
+                    Tel: +886 0 0000-0000　　Fax: +886 0 0000-0000
+                </div>
+                <div>
+                    Address: 00000 台中市00區00路0段00號
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

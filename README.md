@@ -66,7 +66,36 @@
 </div>
 ```
 
+##**Content Sidebar**
+###### no dropdown
+```html
+<div class="sidebar_item">
+    <a href="">
+        <div class="sidebar_item_title">hahahah</div>
+    </a>
+</div>
+```
 
+###### dropdown
+```html
+<div class="sidebar_item">
+      <button class="sidebar_item_title">
+          title
+          <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="sidebar_item_dropdown">
+          <a href="">
+              <div>1</div>
+          </a>
+          <a href="">
+              <div>2</div>
+          </a>
+          <a href="">
+              <div>3</div>
+          </a>
+      </div>
+  </div>
+```
 
 ##**Mobile Menu Sample**
 ###### no dropdown

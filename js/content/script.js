@@ -1,31 +1,5 @@
 $(document).ready(function () {
 
-    // carousel
-    const buttons = document.querySelectorAll("[data-carousel-btn]");
-
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-            const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
-
-            let activeSlide = slides.querySelector("[data-active]");
-            if (!activeSlide) {
-                activeSlide = slides.firstElementChild;
-                activeSlide.dataset.active = true;
-            }
-
-            let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-            if (newIndex < 0) newIndex = slides.children.length - 1;
-            if (newIndex >= slides.children.length) newIndex = 0;
-
-            slides.children[newIndex].dataset.active = true;
-            delete activeSlide.dataset.active;
-        })
-    });
-
-
-
-
     // mobile menu animation gsap scrollTrigger
     const showAnim = gsap.from('.mobile_menu', {
         yPercent: -100,
@@ -46,41 +20,6 @@ $(document).ready(function () {
             self.direction === -1 ? searchAnim.play() : searchAnim.reverse();
         }
     })
-    // modal open & close 
-    // $('#lang_btn').click(function (e) {
-    //     e.preventDefault();
-    //     if ($('#lang_modal').css('display') === 'none') {
-    //         fadeIn('#lang_modal');
-    //         $('#lang_modal').css('display', "block");
-    //         $('body').css('overflow-y', 'hidden');
-
-    //     } else {
-    //         fadeOut('#lang_modal');
-    //         $('body').css('overflow-y', 'scroll');
-    //     }
-    // });
-
-    // $('#footer_lang_btn').click(function (e) {
-    //     e.preventDefault();
-    //     if ($('#lang_modal').css('display') === 'none') {
-    //         fadeIn('#lang_modal');
-    //         $('#lang_modal').css('display', "block");
-    //         $('body').css('overflow-y', 'hidden');
-
-    //     } else {
-    //         fadeOut('#lang_modal');
-    //         $('body').css('overflow-y', 'scroll');
-    //     }
-    // });
-
-    // $('#lang_modal').click(function (event) {
-    //     if (event.target === this) {
-    //         fadeOut('#lang_modal');
-    //         $('body').css('overflow-y', 'scroll');
-    //     }
-    // })
-
-
     //  ========== mobile menu ================
     // mobile menu open & close
     $('.menu_btn').click(function (e) {
@@ -125,33 +64,13 @@ $(document).ready(function () {
     // mobile menu dropdown setup + button
     $.ajax({
         type: "GET",
-        url: "./jsons/link.json",
+        url: "../../jsons/link.json",
         data: {},
         dataType: "json",
         success: function (response) {
 
-            // main page menu load
-            for (let i = 0; i < response["links"].length; i++) {
-                if (response["links"][i]["dropdown"].length) {
-                    $(".main_wrap_group").append(
-                        `<div class="main_wrap">
-                        <div class="main_wrap_btn">${response["links"][i]["title"]}<i class="fa-solid fa-caret-down"></i></div>
-                        <div class="wrap_dropdown"></div></div>`
-                    );
-
-                    for (let dropI = 0; dropI < response["links"][i]["dropdown"].length; dropI++) {
-                        $(".wrap_dropdown").last().append(
-                            `<a href="${response["links"][i]["dropdown"][dropI]["link"]}"><div>${response["links"][i]["dropdown"][dropI]["title"]}</div></a>`
-                        );
-                    }
-
-
-                } else {
-                    $(".main_wrap_group").append(
-                        `<div class="main_wrap"><a href="${response["links"][i]["link"]}"><div class="main_wrap_btn">${response["links"][i]["title"]}</div></a></div>`);
-                }
-            };
-
+            // sidebar load
+            
 
             // mobile menu load
             for (let i = 0; i < response["links"].length; i++) {
@@ -160,23 +79,41 @@ $(document).ready(function () {
                         `<div class="mobile_menu_item"><div class="mobile_dropdown">${response["links"][i]["title"]}<i class="fa-solid fa-chevron-down"></i></div><div class="mobile_dropdown_items"></div></div>`
                     );
 
+                    $(".sidebar_list").append(`<div class="sidebar_item">
+                    <button class="sidebar_item_title">
+                        ${response["links"][i]["title"]}
+                        <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="sidebar_item_dropdown"></div></div>`);
+
                     for (let dropI = 0; dropI < response["links"][i]["dropdown"].length; dropI++) {
                         $(".mobile_dropdown_items").last().append(
                             `<a href="${response["links"][i]["dropdown"][dropI]["link"]}"><div class="mobile_menu_item">${response["links"][i]["dropdown"][dropI]["title"]}</div></a>`
                         );
+
+                        $(".sidebar_item_dropdown").last().append(`<a href="${response["links"][i]["dropdown"][dropI]["link"]}"><div>${response["links"][i]["dropdown"][dropI]["title"]}</div></a>`);
                     }
 
 
                 } else {
                     $(".mobile_menu_group").append(
                         `<div class="mobile_menu_item"><a class="mobile_menu_link" href="${response["links"][i]["link"]}"><div>${response["links"][i]["title"]}</div></a></div>`);
+
+                    $(".sidebar_list").append(`<div class="sidebar_item"><a href="${response["links"][i]["link"]}"><div class="sidebar_item_title">${response["links"][i]["title"]}</div></a></div>`);
                 }
             };
+
+            $('.sidebar_item_title').click(function (e) {
+                e.preventDefault();
+                if ($(this).siblings('.sidebar_item_dropdown').css('display') === 'none') {
+                    $(this).siblings('.sidebar_item_dropdown').show();
+                } else {
+                    $(this).siblings('.sidebar_item_dropdown').hide();
+                };
+            });
 
 
             $('.mobile_dropdown').click(function (e) {
                 e.preventDefault();
-                console.log("click");
                 if ($(this).siblings('.mobile_dropdown_items').css('display') === 'none') {
                     $(this).siblings('.mobile_dropdown_items').show();
                 } else {

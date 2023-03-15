@@ -2,39 +2,39 @@
     "fastLink":[
         {
             "title":"關於我們",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"最新消息",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"產品型錄",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"客戶案例",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"公司地圖",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"聯絡我們",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"付款方式",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"售後服務",
-            "link":""
+            "link":"./content.html"
         },
         {
             "title":"媒體報導",
-            "link":""
+            "link":"./content.html"
         }
     ]
 }

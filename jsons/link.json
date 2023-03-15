@@ -2,22 +2,22 @@
     "links":[
         {
             "title":"首頁",
-            "link":"",
+            "link":"./index.html",
             "dropdown":[]
         },
         {
             "title":"關於",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"全部商品",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"年節福運送好禮",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
@@ -26,15 +26,15 @@
             "dropdown":[
                 {
                     "title":"link1",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link2",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link3",
-                    "link":""
+                    "link":"./content.html"
                 }
             ]
         },
@@ -44,15 +44,15 @@
             "dropdown":[
                 {
                     "title":"link1",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link2",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link3",
-                    "link":""
+                    "link":"./content.html"
                 }
             ]
         },
@@ -62,15 +62,15 @@
             "dropdown":[
                 {
                     "title":"link1",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link2",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link3",
-                    "link":""
+                    "link":"./content.html"
                 }
             ]
         },
@@ -80,15 +80,15 @@
             "dropdown":[
                 {
                     "title":"link1",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link2",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link3",
-                    "link":""
+                    "link":"./content.html"
                 }
             ]
         },
@@ -98,15 +98,15 @@
             "dropdown":[
                 {
                     "title":"link1",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link2adfa",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"link3dfadf",
-                    "link":""
+                    "link":"./content.html"
                 }
             ]
         },
@@ -116,51 +116,51 @@
             "dropdown":[
                 {
                     "title":"lajk1",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"linajajaj",
-                    "link":""
+                    "link":"./content.html"
                 },
                 {
                     "title":"lihahaha",
-                    "link":""
+                    "link":"./content.html"
                 }
             ]
         },
         {
             "title":"套裝行程",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"客製化商品",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"最新消息",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"講座",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"媒體報導",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"門市據點",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         },
         {
             "title":"聯絡我們",
-            "link":"",
+            "link":"./content.html",
             "dropdown":[]
         }
     ]
