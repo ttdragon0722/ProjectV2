@@ -1,3 +1,29 @@
+/* contact */
+@media (max-width:470px) {
+    form {
+        padding:  0px;
+    }
+
+    form div {
+        text-align: left;
+        width: 100%;
+    }
+
+    .question_group {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 5% 0 ;
+    }
+
+    .question_group input {
+        width: 85%;
+    }
+    .question_group textarea {
+        width: 100%;
+    }
+}
+
+
 /* exhibit */
 @media (max-width:760px) {
     .exhibition_article_left {

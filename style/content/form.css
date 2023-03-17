@@ -1,0 +1,36 @@
+form {
+    padding: 0 2%;
+}
+form h4 {
+    margin-bottom: 20px !important;
+}
+
+form input {
+    width: 100%;
+}
+
+form div {
+    margin-right: 2%;
+    margin-bottom: 0 !important;
+    text-align: right; 
+}
+
+.question_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+
+}
+
+.question_group 
+
+.question_group div {
+    width: 20%;
+}
+.question_group input {
+    width: 75%;
+}
+.question_group textarea {
+    width: 75%;
+}
