@@ -62,7 +62,7 @@ $(window).on('load', function () {
     );
 
 
-    gsap.to(
+    TL.to(
         '#carousel',
         {
             scrollTrigger:{
@@ -73,7 +73,7 @@ $(window).on('load', function () {
             duration:1
         }
     );
-    gsap.to(
+    TL.to(
         '.service_item',
         {
             scrollTrigger:{
