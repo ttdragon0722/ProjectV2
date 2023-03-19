@@ -199,47 +199,52 @@
                         </div>
                         <script>
                             const imgHolder = $('#imgHolder');
-                            imgHolder.attr("src",$(".product_small_img").find("img").attr("src"));
-                            $(".product_small_img").click(function (e) { 
-                                gsap.to(imgHolder,{
-                                    opacity:0,duration:0.1,onComplete:()=>{
-                                        imgHolder.attr("src",$(this).find("img").attr("src"));
-                                        gsap.to(imgHolder,{
-                                            opacity:1,duration:0.1
-                                        });
-                                    }
-                                });
-                            });
+                            const productSmallImg = $('.product_small_img');
+                            const productSmallImgImg = productSmallImg.find('img');
+                            let newSrc = productSmallImgImg.eq(0).attr('src');
+                            const tl = gsap.timeline();
 
+                            imgHolder.attr("src",newSrc);
+                            gsap.set(imgHolder, { src: newSrc });
+
+                            productSmallImg.click(function () {
+                                newSrc = $(this).find('img').attr('src');
+                                tl.to(imgHolder, { opacity: 0, duration: 0.1,onComplete:()=>{
+                                    imgHolder.attr("src",newSrc);
+                                }})
+                                    .to(imgHolder, { opacity: 1, duration: 0.1 });
+                            });
                         </script>
                     </div>
                     <div class="product_content">
                         <h2>A SOFA</h2>
                         <h3>$ 9487</h3>
                         <div style="display: flex;align-items: center;margin-bottom: 15%;">
-                            <input type="number" name="" class="amount"  id="" min="1" value="1" style="width: 50px;">
+                            <input type="number" name="" class="amount" id="" min="1" value="1" style="width: 50px;">
                             <button class="exhibit_title" style="margin-bottom:0;">加入購物車</button>
                         </div>
                         <h4 style="margin-bottom: 5%;">Product Details</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tenetur sit, quas nulla, tempore officia quam inventore laborum temporibus, accusantium debitis aspernatur ut illum laboriosam fugiat sunt facilis exercitationem? Sit?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tenetur sit, quas nulla,
+                            tempore officia quam inventore laborum temporibus, accusantium debitis aspernatur ut illum
+                            laboriosam fugiat sunt facilis exercitationem? Sit?</p>
                     </div>
 
                 </div>
                 <div class="product_group">
                     <div class="product_information">
-                        
+
                         <h3 class="title_mark">
                             票券說明
                         </h3>
                         <div class="product_information_content">
-                        票券說明<br/>
-                        此頁面為台中店木作體驗行程(適用於小家庭)<br/>
-                        注意事項<br/>
-                        1. 體驗時間：約1小時<br/>
-                        2. 參加資格：需自備手機體驗此行程活動<br/>
-                        3.適課年齡：16歲以下需家長陪同<br/>
-                        4.訂單處請備註體驗日期、時間(此行程須於3日前完成預約繳款，才能使用此票券!)<br/>
-                        5.課程接受預約時間 10:00 am- 15:00 p.m.截止 (根據門市營運狀況進行預約行程時間調整)<br/>
+                            票券說明<br />
+                            此頁面為台中店木作體驗行程(適用於小家庭)<br />
+                            注意事項<br />
+                            1. 體驗時間：約1小時<br />
+                            2. 參加資格：需自備手機體驗此行程活動<br />
+                            3.適課年齡：16歲以下需家長陪同<br />
+                            4.訂單處請備註體驗日期、時間(此行程須於3日前完成預約繳款，才能使用此票券!)<br />
+                            5.課程接受預約時間 10:00 am- 15:00 p.m.截止 (根據門市營運狀況進行預約行程時間調整)<br />
                         </div>
                     </div>
                     <div class="product_information">
@@ -247,9 +252,9 @@
                             運送&付款
                         </h3>
                         <div class="product_information_content">
-                            運送方式<br/>
-                            體驗課程(電子票券)付款方式<br/>
-                            信用卡ATM 虛擬帳號<br/>
+                            運送方式<br />
+                            體驗課程(電子票券)付款方式<br />
+                            信用卡ATM 虛擬帳號<br />
                         </div>
                     </div>
                 </div>
