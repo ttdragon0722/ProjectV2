@@ -62,23 +62,23 @@ $(window).on('load', function () {
     );
 
 
-    TL.to(
+    gsap.to(
         '#carousel',
         {
             scrollTrigger:{
                 trigger:'#carousel',
-                start:'top 30%'
+                start:'top 10%'
             },
             opacity:1,y:0,ease:"ease-in",
             duration:1
         }
     );
-    TL.to(
+    gsap.to(
         '.service_item',
         {
             scrollTrigger:{
                 trigger:'.service_item',
-                start:'top center'
+                start:'top 80%'
             },
             opacity:1,
             duration:1,
