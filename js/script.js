@@ -150,7 +150,7 @@ $(document).ready(function () {
 
     $('.search_close').click(function (e) {
         e.preventDefault();
-        tl.to(".search_model",
+        gsap.to(".search_model",
             {
                 xPercent: 120,
                 duration: 0.2,
